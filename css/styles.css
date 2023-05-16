@@ -602,16 +602,15 @@ button {
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
+    z-index: var(--modal-idx);
     visibility: visible;
     pointer-events: initial;
-    z-index: var(--modal-idx);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
+    visibility: hidden;
 }
 .modal {
     width: 408px;
@@ -628,6 +627,7 @@ button {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1000ms ease-in;
+    
 }
 
 .backdrop.is-hidden .modal {
