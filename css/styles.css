@@ -39,6 +39,7 @@ body {
     letter-spacing: 0.2em;
     color: var(--main-txt-cl);
     background-color: var(--background-cl);
+    padding-top: 72px;
 }
 
 /* reset start */
@@ -83,6 +84,8 @@ button {
     position: fixed;
     width: 100%;
     z-index: var(--header-idx);
+    top: 0;
+    left: 0;
 }
 .logo-link {
     font-family: var(--second-ft);
@@ -130,7 +133,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-cl);
-    display: flex;
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -486,12 +489,10 @@ button {
 }
 
 .customers-link:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-color: var(--activ-cl);
     color: var(--activ-cl);
 }
 .customers-link:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-color: var(--activ-cl);
     color: var(--activ-cl);
 }
